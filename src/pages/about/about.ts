@@ -10,7 +10,6 @@ export class AboutPage {
   public photo: string;
 
   constructor(public navCtrl: NavController, private camera: Camera) {
-
   }
 
   public takePhoto(){
