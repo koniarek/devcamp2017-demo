@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
+import { NavController, AlertController } from 'ionic-angular';
 
 @Component({
   selector: 'page-home',
@@ -7,8 +7,17 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  constructor(public navCtrl: NavController, public alertController: AlertController) {
 
   }
 
+  public hello(){
+    let alert = this.alertController.create({
+      title: 'Devcamp 2017',
+      subTitle: 'Hello Developers, Have a nice day!',
+      buttons: ['OK']
+    });
+    alert.present();
+  }
+   
 }
