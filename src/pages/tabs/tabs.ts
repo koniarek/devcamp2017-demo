@@ -1,3 +1,4 @@
+import { WeatherPage } from './../weather/weather';
 import { Component } from '@angular/core';
 
 import { AboutPage } from '../about/about';
@@ -12,7 +13,8 @@ export class TabsPage {
   tab1Root = HomePage;
   tab2Root = AboutPage;
   tab3Root = ContactPage;
-
+  tab4Root = WeatherPage;
+  
   constructor() {
 
   }
